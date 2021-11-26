@@ -3,7 +3,7 @@ const estiloInicial = StyleSheet.create ({
   
     titulo: {
         fontFamily: "georgia",
-        color: '#00cc99',
+        color: '#060606',
         fontWeight: 'bold',
         textAlign: "center",
         fontSize: 20,
@@ -29,7 +29,7 @@ const estiloInicial = StyleSheet.create ({
     },
 
     botaoTexto: {
-        color: '#201E1A',
+        color: '#181212',
         fontFamily: 'georgia',
         fontSize: 18,
     },
@@ -49,6 +49,7 @@ const estiloInicial = StyleSheet.create ({
         fontFamily: 'georgia',
         fontSize: 15,
         textAlign: 'center',
+        color: '#322929',
     },
 
 });
