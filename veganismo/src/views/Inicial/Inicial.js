@@ -8,7 +8,8 @@ function Inicial () {
             <View style={estiloInicial.borda}>
                 <Image source={require('../assets/vegan_icon.png')} style={estiloInicial.imagem}/>
                 <Text style={estiloInicial.titulo}>Veganismo</Text>  
-                <Text style={estiloInicial.subtexto}>Seja bem-vindo à sua fonte segura de informações sobre o veganismo.</Text>
+                <Text style={estiloInicial.subtexto}>Seja bem-vindo à sua fonte segura de informações 
+                sobre o veganismo.</Text>
 
                 <TouchableOpacity style={estiloInicial.botaoPrincipal}>
                     <Text style={estiloInicial.botaoTexto}>Sobre</Text>
