@@ -2,17 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import estiloInicial from './estiloInicial';
 
-
-
-function Inicial ({navigation}) {
-
-    const abrirSobre = () => {
-        navigation.navigate('Sobre')
-    }
-    const abrirDetalhes = () => {
-        navigation.navigate('Detalhes')
-    }
-
+function Inicial () {
     return (
         <View style={estiloInicial.container}>
             <View style={estiloInicial.borda}>

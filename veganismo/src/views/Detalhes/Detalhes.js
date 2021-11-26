@@ -2,10 +2,15 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import estiloDetalhes from './estiloDetalhes';
 
+function Detalhes({ navigation }) {
 
+    const voltar = () => {
+        navigation.goBack();
+    }
+    
     return (
-        <View style={estiloInicial.container}>
-            <View style={estiloInicial.borda}>
+        <View style={estiloDetalhes.container}>
+            <View style={estiloDetalhes.borda}>
                 <Text style={estiloDetalhes.titulo}>Detalhes do Veganismo</Text>
 
                 <Text style={estiloDetalhes.texto}>Uma das principais preocupações de quem opta por uma 
@@ -17,7 +22,11 @@ import estiloDetalhes from './estiloDetalhes';
                 ricos em proteína. Mas, isso não significa que eles sejam as únicas opções. Alguns 
                 vegetais podem ser até mais eficientes e, quando consumidos em variedade, são melhores 
                 ainda.</Text>
+
+                <Text style={estiloDetalhes.nome}>Layra da Silva Fernandes Carvalho</Text> 
+                <Text style={estiloDetalhes.creditos}>Todos os direitos reservados.</Text>
             </View>
         </View>
     )
-    export default Sobre;
+}
+    export default Detalhes;
