@@ -13,5 +13,16 @@ const estiloInicial = StyleSheet.create ({
         width: 250,
         resizeMode: 'contain',
     },
+
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    borda: {
+    },
+
+
 });
 export default estiloInicial;

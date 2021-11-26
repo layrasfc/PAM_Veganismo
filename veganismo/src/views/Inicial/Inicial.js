@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import estiloInicial from './estiloInicial';
 
 <Image source={require('../assets/vegan_icon.png')} style={estiloInicial.imagem}/>
@@ -14,8 +14,18 @@ function Inicial ({navigation}) {
     }
 
     return (
-        <View style={{flex: 1, backgroundColor: '#e6ffe6'}}> 
-        <Text style={estiloInicial.titulo}>Veganismo</Text>
+        <View style={estiloInicial.container}>
+            <View style={estiloInicial.borda}>
+                <Text style={estiloInicial.titulo}>Veganismo</Text>  
+
+                <TouchableOpacity style={estiloInicial.botaoPrincipal}>
+                    <Text style={estiloInicial.botaoTexto}>Sobre</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity style={estiloInicial.botaoPrincipal}>
+                    <Text style={estiloInicial.botaoTexto}>Detalhes</Text>
+                </TouchableOpacity>
+            </View> 
         </View>
     )
     }
